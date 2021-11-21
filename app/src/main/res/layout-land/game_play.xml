@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".GamePlay">
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/orange"
+        android:text="PAUSE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/reset_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/reset_button" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/orange"
+        android:text="RESET"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pauseButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revers5" />
+
+    <ImageView
+        android:id="@+id/revers6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toBottomOf="@+id/revers5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/revers5"></ImageView>
+
+    <ImageView
+        android:id="@+id/revers1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toBottomOf="@+id/revers2"
+        app:layout_constraintEnd_toStartOf="@+id/revers2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/revers4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toBottomOf="@+id/revers5"
+        app:layout_constraintEnd_toStartOf="@+id/revers5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/revers5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toTopOf="@+id/reset_button"
+        app:layout_constraintEnd_toStartOf="@+id/revers6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/revers4"
+        app:layout_constraintTop_toBottomOf="@+id/revers2"></ImageView>
+
+    <ImageView
+        android:id="@+id/revers3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toBottomOf="@+id/revers2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/revers2"></ImageView>
+
+    <ImageView
+        android:id="@+id/revers2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/revers"
+        app:layout_constraintBottom_toTopOf="@+id/revers5"
+        app:layout_constraintEnd_toStartOf="@+id/revers3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/revers1"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

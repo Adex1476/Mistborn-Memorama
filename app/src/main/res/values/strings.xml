@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">p1_memoryGame_cotanoaitor</string>
+    <string-array name="Difficulty">
+        <item>EASY</item>
+        <item>HARD</item>
+        <item>MISTBORN</item>
+    </string-array>
+
+</resources>
